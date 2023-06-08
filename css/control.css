@@ -1,0 +1,240 @@
+﻿
+.fulltable
+{
+	width:900px;
+	padding:10px;
+	margin : 20px;
+	margin:0 auto;
+}
+
+.fulltable td
+{
+  height:50px;
+  max-height:50px; 
+  min-height:50px;
+  padding:6px;
+  border: 1px dashed #000000;
+}
+
+
+.fulltable th
+{
+    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    font-family: Lucida Calligraphy;
+    font-size: 12px;
+    font-weight: bold;
+    color: #c0d3e8;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #779eca;
+    background-color: #946934;
+    border: 1px dashed #000000;
+}
+
+
+.minitable
+{
+	width:500px;
+	padding:10px;
+	margin : 20px;
+	margin:0 auto;
+}
+
+.minitable td
+{
+  height:50px;
+  max-height:50px; 
+  min-height:50px;
+  padding:6px;
+  border: 1px dashed #000000;
+}
+
+
+
+    .minitable th
+{
+    height: 40px;
+    font-family: Comic Sans MS;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #2F2E00;
+    border: 1px dashed #000000;
+}
+
+
+.minitable td a
+{
+	height:40px;
+	font-family:Constantia;
+    font-size: 12px;
+    color: #ffffff;
+	text-align: center;
+	background-color:#2F2E00;
+	border-radius:10px;
+	padding:10px;
+}
+
+
+
+input[type="text"], input[type="password"]
+{
+ 
+    color: #000000;
+    width: 250px;
+    height: 20px;
+    font-family: Constantia;
+    font-size: 14px;
+    margin: 3px;
+    letter-spacing: 2px;
+    border: 4px double #000000;
+    font-weight:bold;
+    padding:5px;
+}
+
+select
+	{
+	 color: #000000;
+    width: 260px;
+    height: 40px;
+    font-family: Constantia;
+     font-size: 14px;
+    margin: 3px;
+    letter-spacing: 2px;
+    border: 4px double #000000;
+    font-weight:bold;
+    padding:5px;
+}
+
+textarea
+	{
+	 color: #000000;
+    width: 260px;
+    height: 100px;
+    font-family: Constantia;
+     font-size: 14px;
+    margin: 3px;
+    letter-spacing: 2px;
+    border: 4px double #000000;
+    font-weight:bold;
+    padding:5px;
+}
+
+input[type="submit"], buton
+{
+    font-family: Comic Sans MS;
+    padding: 5px 30px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFCC;
+    border: 2px solid #ffffff;
+    background-color: #946934;
+    -moz-box-shadow: 0px 0px 5px #ccc;
+    -webkit-box-shadow: 0px 0px 5px #ccc;
+    box-shadow: 0px 0px 5px #ccc;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: Comic Sans MS;
+   font-size: 14px;
+    letter-spacing: 2px;
+    border-radius:20px;
+}
+
+   .error
+{
+    color: #FF0000;
+    font-size: 12px;
+}
+
+
+
+.displaytable
+{
+    border: 1px dotted #000000;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+    font-family: constantia;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.displaytable tr
+{
+    height:40px;
+}
+
+.displaytable a
+{
+  height:40px;
+	font-family:Constantia;
+    font-size: 12px;
+    color: #ffffff;
+	text-align: center;
+	background-color:#2F2E00;
+	border-radius:10px;
+	padding:10px;
+}
+
+.displaytable th
+{
+    color: #FFFFCC;
+    font-family: Lucida Calligraphy;
+   background-color: #946934;
+    font-size: 14px;
+    font-style: normal;
+}
+
+
+
+
+.miniimg
+{
+width:100px;
+height:100px;
+}
+
+.previewimg
+{
+width:250px;
+height:200px;
+}
+
+
+
+
+/* Pop Up window for Image Style */
+
+.modal
+{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    z-index: 100;
+    opacity: 0.8;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.8;
+    min-height: 100%;
+}
+#divImage
+{
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: White;
+    height: 550px;
+    width: 600px;
+    padding: 3px;
+    border: solid 1px black;
+}
+
+

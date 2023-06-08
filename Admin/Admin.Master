@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Adoptation_Portal.Admin.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+   <title>Adoptation Portal</title>
+  
+  <link rel="stylesheet" type="text/css" href="../../css/control.css" />
+
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="AdminHome.aspx">Adoptation <span class="logo_colour">Portal</span></a></h1>
+          <h2>You are what you love, not what loves you.</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+        
+         
+          <li><a href="AdminAdoptationList.aspx">Adoptation</a></li>
+          <li><a href="AdminOrphansList.aspx">Kids</a></li>
+          <li><a href="AdminUsersList.aspx">Users</a></li>
+          <li><a href="AdminOrphanagesList.aspx">Orphanages</a></li>
+          <li><a href="AdminDocumentsList.aspx">Documents</a></li>
+          <li><a href="../Logout.aspx">Logout</a></li>
+        
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+     
+     
+      <div class="content">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+     </div>
+    </div>
+	
+    <footer>
+      <p>Copyright &copy; Students | <a href="#">Adoptation Team</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="../../js/image_fade.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $('ul.sf-menu').sooperfish();
+      });
+  </script>
+    </form>
+</body>
+</html>

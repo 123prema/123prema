@@ -1,0 +1,29 @@
+H:\Developing Projects\ASP.NET\Adoptation Portal\Adoptation Portal\bin\Adoptation Portal.dll
+H:\Developing Projects\ASP.NET\Adoptation Portal\Adoptation Portal\bin\Adoptation Portal.pdb
+H:\Developing Projects\ASP.NET\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.dll
+H:\Developing Projects\ASP.NET\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.pdb
+H:\2019-2020 Projects\Projects\ASP.NET\Bapuji\Adoptation Portal\Adoptation Portal\bin\Adoptation Portal.dll
+H:\2019-2020 Projects\Projects\ASP.NET\Bapuji\Adoptation Portal\Adoptation Portal\bin\Adoptation Portal.pdb
+H:\2019-2020 Projects\Projects\ASP.NET\Bapuji\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.csprojResolveAssemblyReference.cache
+H:\2019-2020 Projects\Projects\ASP.NET\Bapuji\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.dll
+H:\2019-2020 Projects\Projects\ASP.NET\Bapuji\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.pdb
+E:\Projects\Student Projects\Projects\ASP.NET\C# projects\2019-20 Projects\Bapuji\Adoptation Portal\Adoptation Portal\bin\Adoptation Portal.dll
+E:\Projects\Student Projects\Projects\ASP.NET\C# projects\2019-20 Projects\Bapuji\Adoptation Portal\Adoptation Portal\bin\Adoptation Portal.pdb
+E:\Projects\Student Projects\Projects\ASP.NET\C# projects\2019-20 Projects\Bapuji\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.csprojResolveAssemblyReference.cache
+E:\Projects\Student Projects\Projects\ASP.NET\C# projects\2019-20 Projects\Bapuji\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.dll
+E:\Projects\Student Projects\Projects\ASP.NET\C# projects\2019-20 Projects\Bapuji\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.pdb
+E:\2020-2021 Projects\Projects\ASP.NET\BIMS\Adoptation Portal\Adoptation Portal\bin\Adoptation Portal.dll
+E:\2020-2021 Projects\Projects\ASP.NET\BIMS\Adoptation Portal\Adoptation Portal\bin\Adoptation Portal.pdb
+E:\2020-2021 Projects\Projects\ASP.NET\BIMS\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.csprojResolveAssemblyReference.cache
+E:\2020-2021 Projects\Projects\ASP.NET\BIMS\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.dll
+E:\2020-2021 Projects\Projects\ASP.NET\BIMS\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.pdb
+F:\Adoptation Portal\Adoptation Portal\bin\Adoptation Portal.dll
+F:\Adoptation Portal\Adoptation Portal\bin\Adoptation Portal.pdb
+F:\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.csprojResolveAssemblyReference.cache
+F:\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.dll
+F:\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.pdb
+C:\Users\User\Desktop\.net\Adoptation Portal\Adoptation Portal\bin\Adoptation Portal.dll
+C:\Users\User\Desktop\.net\Adoptation Portal\Adoptation Portal\bin\Adoptation Portal.pdb
+C:\Users\User\Desktop\.net\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\.net\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.dll
+C:\Users\User\Desktop\.net\Adoptation Portal\Adoptation Portal\obj\Debug\Adoptation Portal.pdb

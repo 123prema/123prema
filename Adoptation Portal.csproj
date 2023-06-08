@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A53E9943-16B1-474E-B51B-215E8169B9D3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adoptation_Portal</RootNamespace>
+    <AssemblyName>Adoptation Portal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\control.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\News Cycle SIL OFL Font License 1.1.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\arrows-white.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bullet.png" />
+    <Content Include="images\graphic.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\menu_bg.png" />
+    <Content Include="images\pattern.png" />
+    <Content Include="js\image_fade.js" />
+    <Content Include="js\jquery.easing-sooper.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.sooperfish.js" />
+    <Content Include="js\modernizr-1.5.min.js" />
+    <Content Include="Scripts\image.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\_notes\dwsync.xml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebPages\AboutUs.aspx" />
+    <Content Include="WebPages\Admin\AdminAdoptationList.aspx" />
+    <Content Include="WebPages\Admin\AdminDocumentsList.aspx" />
+    <Content Include="WebPages\Admin\AdminHome.aspx" />
+    <Content Include="WebPages\Admin\AdminOrphanagesList.aspx" />
+    <Content Include="WebPages\Admin\AdminOrphanagesView.aspx" />
+    <Content Include="WebPages\Admin\AdminOrphansList.aspx" />
+    <Content Include="WebPages\Admin\AdminOrphanView.aspx" />
+    <Content Include="WebPages\Admin\AdminRequestView.aspx" />
+    <Content Include="WebPages\Admin\AdminUsersList.aspx" />
+    <Content Include="WebPages\Admin\AdminUsersView.aspx" />
+    <Content Include="WebPages\Contact.aspx" />
+    <Content Include="WebPages\Index.aspx" />
+    <Content Include="WebPages\Orphanages\OrphanagesAdoptationRequestList.aspx" />
+    <Content Include="WebPages\Orphanages\OrphanagesRequestView.aspx" />
+    <Content Include="WebPages\Rules.aspx" />
+    <Content Include="WebPages\Users\ChangePassword.aspx" />
+    <Content Include="WebPages\Users\UserAdoptationRequestList.aspx" />
+    <Content Include="WebPages\Users\UsersHome.aspx" />
+    <Content Include="WebPages\Users\UsersInfo.aspx" />
+    <Content Include="WebPages\Users\UsersOrphanList.aspx" />
+    <Content Include="WebPages\Users\UsersOrphanView.aspx" />
+    <Content Include="WebPages\Users\UsersRequestView.aspx" />
+    <Content Include="WebPages\Users\UserUploadDocuments.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WebPages\Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Database.cs" />
+    <Compile Include="Code\readyclass.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebPages\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminAdoptationList.aspx.cs">
+      <DependentUpon>AdminAdoptationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminAdoptationList.aspx.designer.cs">
+      <DependentUpon>AdminAdoptationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminDocumentsList.aspx.cs">
+      <DependentUpon>AdminDocumentsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminDocumentsList.aspx.designer.cs">
+      <DependentUpon>AdminDocumentsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminOrphanagesList.aspx.cs">
+      <DependentUpon>AdminOrphanagesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminOrphanagesList.aspx.designer.cs">
+      <DependentUpon>AdminOrphanagesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminOrphanagesView.aspx.cs">
+      <DependentUpon>AdminOrphanagesView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminOrphanagesView.aspx.designer.cs">
+      <DependentUpon>AdminOrphanagesView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminOrphansList.aspx.cs">
+      <DependentUpon>AdminOrphansList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminOrphansList.aspx.designer.cs">
+      <DependentUpon>AdminOrphansList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminOrphanView.aspx.cs">
+      <DependentUpon>AdminOrphanView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminOrphanView.aspx.designer.cs">
+      <DependentUpon>AdminOrphanView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminRequestView.aspx.cs">
+      <DependentUpon>AdminRequestView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminRequestView.aspx.designer.cs">
+      <DependentUpon>AdminRequestView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminUsersList.aspx.cs">
+      <DependentUpon>AdminUsersList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminUsersList.aspx.designer.cs">
+      <DependentUpon>AdminUsersList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminUsersView.aspx.cs">
+      <DependentUpon>AdminUsersView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminUsersView.aspx.designer.cs">
+      <DependentUpon>AdminUsersView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\Orphanages.Master.cs">
+      <DependentUpon>Orphanages.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\Orphanages.Master.designer.cs">
+      <DependentUpon>Orphanages.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\OrphanagesAdoptationRequestList.aspx.cs">
+      <DependentUpon>OrphanagesAdoptationRequestList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\OrphanagesAdoptationRequestList.aspx.designer.cs">
+      <DependentUpon>OrphanagesAdoptationRequestList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\OrphanagesHome.aspx.cs">
+      <DependentUpon>OrphanagesHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\OrphanagesHome.aspx.designer.cs">
+      <DependentUpon>OrphanagesHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\OrphanagesInfo.aspx.cs">
+      <DependentUpon>OrphanagesInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\OrphanagesInfo.aspx.designer.cs">
+      <DependentUpon>OrphanagesInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\OrphanagesOrphanAdd.aspx.cs">
+      <DependentUpon>OrphanagesOrphanAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\OrphanagesOrphanAdd.aspx.designer.cs">
+      <DependentUpon>OrphanagesOrphanAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\OrphanagesOrphanList.aspx.cs">
+      <DependentUpon>OrphanagesOrphanList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\OrphanagesOrphanList.aspx.designer.cs">
+      <DependentUpon>OrphanagesOrphanList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\OrphanagesRequestView.aspx.cs">
+      <DependentUpon>OrphanagesRequestView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Orphanages\OrphanagesRequestView.aspx.designer.cs">
+      <DependentUpon>OrphanagesRequestView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\RegistrationOrphanage.aspx.cs">
+      <DependentUpon>RegistrationOrphanage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\RegistrationOrphanage.aspx.designer.cs">
+      <DependentUpon>RegistrationOrphanage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\RegistrationUser.aspx.cs">
+      <DependentUpon>RegistrationUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\RegistrationUser.aspx.designer.cs">
+      <DependentUpon>RegistrationUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Rules.aspx.cs">
+      <DependentUpon>Rules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Rules.aspx.designer.cs">
+      <DependentUpon>Rules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Users\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Users\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Users\UserAdoptationRequestList.aspx.cs">
+      <DependentUpon>UserAdoptationRequestList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Users\UserAdoptationRequestList.aspx.designer.cs">
+      <DependentUpon>UserAdoptationRequestList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Users\Users.Master.cs">
+      <DependentUpon>Users.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Users\Users.Master.designer.cs">
+      <DependentUpon>Users.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Users\UsersHome.aspx.cs">
+      <DependentUpon>UsersHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Users\UsersHome.aspx.designer.cs">
+      <DependentUpon>UsersHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Users\UsersInfo.aspx.cs">
+      <DependentUpon>UsersInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Users\UsersInfo.aspx.designer.cs">
+      <DependentUpon>UsersInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Users\UsersOrphanList.aspx.cs">
+      <DependentUpon>UsersOrphanList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Users\UsersOrphanList.aspx.designer.cs">
+      <DependentUpon>UsersOrphanList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Users\UsersOrphanView.aspx.cs">
+      <DependentUpon>UsersOrphanView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Users\UsersOrphanView.aspx.designer.cs">
+      <DependentUpon>UsersOrphanView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Users\UsersRequestView.aspx.cs">
+      <DependentUpon>UsersRequestView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Users\UsersRequestView.aspx.designer.cs">
+      <DependentUpon>UsersRequestView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Users\UserUploadDocuments.aspx.cs">
+      <DependentUpon>UserUploadDocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Users\UserUploadDocuments.aspx.designer.cs">
+      <DependentUpon>UserUploadDocuments.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebPages\DImages\" />
+    <Folder Include="WebPages\OImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebPages\Admin\Admin.Master" />
+    <None Include="fonts\NewsCycle-Regular.eot" />
+    <None Include="fonts\NewsCycle-Regular.ttf" />
+    <None Include="fonts\YanoneKaffeesatz-Regular.eot" />
+    <None Include="fonts\YanoneKaffeesatz-Regular.ttf" />
+    <Content Include="WebPages\Login.aspx" />
+    <Content Include="WebPages\Logout.aspx" />
+    <Content Include="WebPages\Orphanages\ChangePassword.aspx" />
+    <Content Include="WebPages\Orphanages\OrphanagesHome.aspx" />
+    <Content Include="WebPages\Orphanages\OrphanagesInfo.aspx" />
+    <Content Include="WebPages\Orphanages\OrphanagesOrphanAdd.aspx" />
+    <Content Include="WebPages\Orphanages\OrphanagesOrphanList.aspx" />
+    <Content Include="WebPages\RegistrationOrphanage.aspx" />
+    <Content Include="WebPages\RegistrationUser.aspx" />
+    <Content Include="WebPages\User.Master" />
+    <Content Include="WebPages\Orphanages\Orphanages.Master" />
+    <Content Include="WebPages\Users\Users.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2290</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
